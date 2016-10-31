@@ -378,7 +378,7 @@ body {
 <script>
 	$('#input').keydown(function(e){
 		var ev=e || document.event;
-		console.info(ev.keyCode);
+		alert(ev.keyCode);
 		if ((ev.keyCode < 96 || ev.keyCode > 105) && ev.keyCode!=190 && ev.keyCode!=8) {
                 if(ev.preventDefault){
                 	ev.preventDefault();
