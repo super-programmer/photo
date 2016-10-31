@@ -381,7 +381,7 @@ body {
 	$('#input').keydown(function(e){
 		var ev=e || document.event;
 		console.info(ev.keyCode);
-		if ((ev.keyCode <= 47 || ev.keyCode >= 58) && ev.keyCode!=190) {
+		if ((ev.keyCode < 96 || ev.keyCode > 105) && ev.keyCode!=190) {
                 if(ev.preventDefault){
                 	ev.preventDefault();
                 }else{
